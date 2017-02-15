@@ -16,11 +16,14 @@ int num;
 
 int isPrime(int num);
 int loopTable(int n);
+int collatz();
 
 int main() {
     std::cout << "Hello World!\n"; //Coding Problem 1
     isPrime(11);
     loopTable(10);
+    cout << collatz();
+
 }
 
 /*
@@ -53,3 +56,28 @@ int loopTable(int n) {
 
     return 0;
 }
+
+/*
+ Problem 4
+ */
+
+/*
+ Problem 5
+ */
+int collatz() {
+    int usr;
+    cout << "Please enter an integer value: ";
+    cin >> usr;
+    int count = 0;
+    while (usr != 1) {
+        if (usr % 2 == 0) {
+            count += 1;
+            usr = usr / 2;
+        }//if
+        else {
+            count += 1;
+            usr = (3 * usr) + 1;
+        }//else
+    }//while
+    return count;
+}//collatz
