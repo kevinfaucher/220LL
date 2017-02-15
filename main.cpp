@@ -85,24 +85,24 @@ int collatz() {
 }//collatz
 
 int leapyear() {
-int year;
-year = 2017;
-for(year; year+400; year++){
-  if (year==2417){
-    return 0;}
-if (year%4 == 0) {
-    if (year%100 == 0) {
-        if (year%400 == 0) {
-            cout << year << "\n";
+    int year;
+    year = 2017;
+    for (year; year + 400; year++) {
+        if (year == 2417) {
+            return 0;
         }
-        
-    }
-    else {
-        cout << year << "\n";
-    }
-}
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    cout << year << "\n";
+                }
+
+            } else {
+                cout << year << "\n";
+            }
+        }
 
 
-}
+    }
 }
 
