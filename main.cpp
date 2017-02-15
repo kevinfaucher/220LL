@@ -17,12 +17,14 @@ int num;
 int isPrime(int num);
 int loopTable(int n);
 int collatz();
+int leapyear();
 
 int main() {
     std::cout << "Hello World!\n"; //Coding Problem 1
     isPrime(11);
     loopTable(10);
     cout << collatz();
+    cout << leapyear();
 
 }
 
@@ -81,3 +83,26 @@ int collatz() {
     }//while
     return count;
 }//collatz
+
+int leapyear() {
+int year;
+year = 2017;
+for(year; year+400; year++){
+  if (year==2417){
+    return 0;}
+if (year%4 == 0) {
+    if (year%100 == 0) {
+        if (year%400 == 0) {
+            cout << year << "\n";
+        }
+        
+    }
+    else {
+        cout << year << "\n";
+    }
+}
+
+
+}
+}
+
