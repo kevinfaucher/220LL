@@ -14,8 +14,13 @@ using namespace std;
  */
 int num;
 
+int isPrime(int num);
+int loopTable(int n);
+
 int main() {
-    std::cout << "Hello World!"; //Coding Problem 1
+    std::cout << "Hello World!\n"; //Coding Problem 1
+    isPrime(11);
+    loopTable(10);
 }
 
 /*
@@ -42,10 +47,6 @@ int isPrime(int num) {
  * Takes an integer and prints the multiplication table
  */
 int loopTable(int n) {
-
-    cout << "Enter a positive integer: ";
-    cin >> n;
-
     for (int i = 1; i <= 12; ++i) {
         cout << n << " * " << i << " = " << n * i << endl;
     }
