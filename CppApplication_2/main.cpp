@@ -12,6 +12,11 @@
  */
 
 #include <cstdlib>
+#include <stdlib.h>
+#include <iostream>
+#include <time.h> 
+
+
 
 using namespace std;
 
@@ -20,14 +25,31 @@ using namespace std;
  */
 int order1(int x, int y);
 
-int main(int argc, char** argv) {
+int main() {
+    srand(time(NULL));
+    int i;
+    cout << "Hello World!\n";
+    i = (rand()%51)+1;
+    cout << i;
+    
+    
 
-    return 0;
 }
+/*
+int order1(int x, int y) {
+    if (x > y) {
+        int tmp = x;
+        x = y;
+        y = tmp;
+        //make it call by pointer
+        //return false;
+    }
+    else{
+        return true;
+    }
 
-int order1(int x, int y){
-    
-    
-    
 }
+*/
+
+
 
